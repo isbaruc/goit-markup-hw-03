@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,118 +10,150 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header class="header">
-      <nav class="navigation">
-        <a href="index.html" class="logo-header link">WebStudio</a>
+      <div class="container container-header">
+        <nav class="navigation">
+          <a href="index.html" class="logo-header link">WebStudio</a>
+          <ul class="list">
+            <li class="list-item">
+              <a class="site-nav current link" href="index.html">Estudio</a>
+            </li>
+            <li class="list-item"><a class="site-nav link" href="portfolio.html">Portfolio</a></li>
+            <li class="list-item"><a class="site-nav link" href="#">Contactos</a></li>
+          </ul>
+        </nav>
         <ul class="list">
-          <li><a class="site-nav current link" href="index.html">Estudio</a></li>
-          <li><a class="site-nav link" href="portfolio.html">Portfolio</a></li>
-          <li><a class="site-nav link" href="#">Contactos</a></li>
+          <li class="list-item">
+            <a href="mailto:info@devstudio.com" class="contact-links link">info@devstudio.com</a>
+          </li>
+          <li class="list-item">
+            <a class="contact-links link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contact-links link">info@devstudio.com</a>
-        </li>
-        <li>
-          <a class="contact-links link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
-      <section class="hero">
-        <h1 class="hero-title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-        <button type="button" class="buttons">Solicite nuestro servicio</button>
+      <section class="hero section">
+        <div class="container container-hero">
+          <h1 class="hero-title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+          <button type="button" class="buttons">Solicite nuestro servicio</button>
+        </div>
       </section>
-      <section>
+      <section class="section">
         <!--<h2>Nuestras ventajas</h2>-->
-        <ul class="list">
-          <li>
-            <h3 class="advantages">Atencion a los detalles </h3>
-            <p class="advantages-description">
-              Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar una solución a su medida.
-            </p>
-          </li>
-          <li>
-            <h3 class="advantages">Puntualidad</h3>
-            <p class="advantages-description">
-              Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la empresa: respetar su tiempo y respetar los plazos acordados.
-            </p>
-          </li>
-          <li>
-            <h3 class="advantages">Planificacion</h3>
-            <p class="advantages-description">
-              Usted podrá observar y participar en cada fase del desarrollo y aplicación de soluciones.
-            </p>
-          </li>
-          <li>
-            <h3 class="advantages">Technologia moderna</h3>
-            <p class="advantages-description">
-              Usamos herramientas innovadoras para resolver las tareas asignadas. Es hora de simplificar los procesos laborales.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="list">
+            <li class="container-advantages list-item">
+              <h3 class="advantages">Atencion a los detalles</h3>
+              <p class="advantages-description">
+                Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar
+                una solución a su medida.
+              </p>
+            </li>
+            <li class="container-advantages list-item">
+              <h3 class="advantages">Puntualidad</h3>
+              <p class="advantages-description">
+                Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la
+                empresa: respetar su tiempo y respetar los plazos acordados.
+              </p>
+            </li>
+            <li class="container-advantages list-item">
+              <h3 class="advantages">Planificacion</h3>
+              <p class="advantages-description">
+                Usted podrá observar y participar en cada fase del desarrollo y aplicación de
+                soluciones.
+              </p>
+            </li>
+            <li class="container-advantages list-item">
+              <h3 class="advantages">Technologia moderna</h3>
+              <p class="advantages-description">
+                Usamos herramientas innovadoras para resolver las tareas asignadas. Es hora de
+                simplificar los procesos laborales.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="activity">
-        <h2 class="subtitle">A qué nos dedicamos</h2>
-        <ul class="sub-img list">
-          <li><img src="./images/code.jpg" alt="Написание кода" width="370" height="294" /></li>
-          <li>
-            <img
-              src="./images/app.jpg"
-              alt="Разработка приложений для мобильных устройств"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li><img src="./images/design.jpg" alt="Веб Дизайн" width="370" height="294" /></li>
-        </ul>
+      <section class="activity section">
+        <div class="container">
+          <h2 class="subtitle">A qué nos dedicamos</h2>
+          <ul class="sub-img list">
+            <li class="list-item">
+              <img src="./images/code.jpg" alt="Написание кода" width="370" height="294" />
+            </li>
+            <li class="list-item">
+              <img
+                src="./images/app.jpg"
+                alt="Разработка приложений для мобильных устройств"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="list-item">
+              <img src="./images/design.jpg" alt="Веб Дизайн" width="370" height="294" />
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="team">
-        <h2 class="subtitle">Nuestro equipo</h2>
-        <ul class="team-list list">
-          <li>
-            <img src="./images/igordem.jpg" alt="Игорь Демьяненко" width="270" height="260" />
-            <h3 class="names">Andrés Cubo</h3>
-            <p class="position">Diseñador de Productos</p>
-          </li>
-          <li>
-            <img src="./images/olharep.jpg" alt="Ольга Репина" width="270" height="260" />
-            <h3 class="names">Carla Palacios</h3>
-            <p class="position">Desarrolladora Frontend</p>
-          </li>
-          <li>
-            <img src="./images/nikolaytar.jpg" alt="Николай Тарасов" width="270" height="260" />
-            <h3 class="names">Mario Dorado</h3>
-            <p class="position">Marketing</p>
-          </li>
-          <li>
-            <img src="./images/mihailyarm.jpg" alt="Михаил Ермаков" width="270" height="260" />
-            <h3 class="names">Pablo Mijangos</h3>
-            <p class="position">Diseñador IU </p>
-          </li>
-        </ul>
+      <section class="team section">
+        <div class="container">
+          <h2 class="subtitle">Nuestro equipo</h2>
+          <ul class="team-list list">
+            <li class="list-item">
+              <img src="./images/igordem.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+              <h3 class="names">Andrés Cubo</h3>
+              <p class="position">Diseñador de Productos</p>
+            </li>
+            <li class="list-item">
+              <img src="./images/olharep.jpg" alt="Ольга Репина" width="270" height="260" />
+              <h3 class="names">Carla Palacios</h3>
+              <p class="position">Desarrolladora Frontend</p>
+            </li>
+            <li class="list-item">
+              <img src="./images/nikolaytar.jpg" alt="Николай Тарасов" width="270" height="260" />
+              <h3 class="names">Mario Dorado</h3>
+              <p class="position">Marketing</p>
+            </li>
+            <li class="list-item">
+              <img src="./images/mihailyarm.jpg" alt="Михаил Ермаков" width="270" height="260" />
+              <h3 class="names">Pablo Mijangos</h3>
+              <p class="position">Diseñador IU</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer  class="footer">
-      <a class="logo-footer link" href="">WebStudio</a>
-      <address >
-        <ul class="list">
-          <li>
-            <a  class="address link" href="enlace google map" target="_blank" rel="noopener noreferrer">Calz. Ticomán 500, Ciudad de México, CDMX, México>
-          </li>
-          <li>
-            <a class="contact-footer link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li>
-            <a  class="contact-footer link"href="tel:525555296000">+52 55 5529 6000</a>
-          </li>
-        </ul>
-      </address>
+    <footer class="footer">
+      <div class="container">
+        <a class="logo-footer link" href="">WebStudio</a>
+        <address>
+          <ul class="list-footer">
+            <li>
+              <a
+                class="address link"
+                href="enlace google map"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
+              >
+            </li>
+            <li>
+              <a class="contact-footer link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li>
+              <a class="contact-footer link" href="tel:525555296000">+52 55 5529 6000</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
